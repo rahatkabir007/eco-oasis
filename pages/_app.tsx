@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import { store } from "../src/state/StateController";
+import { ThemeProvider } from "next-themes";
 
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;
@@ -17,10 +18,12 @@ export default function MyApp(props: AppProps) {
   }, []);
 
   return (
-    <Provider store={store}>
-      <React.Fragment>
-        <Component {...pageProps} />
-      </React.Fragment>
-    </Provider>
+    <ThemeProvider enableSystem={true} attribute="class">
+      <Provider store={store}>
+        <React.Fragment>
+          <Component {...pageProps} />
+        </React.Fragment>
+      </Provider>
+    </ThemeProvider>
   );
 }

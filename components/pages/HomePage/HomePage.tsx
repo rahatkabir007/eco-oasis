@@ -11,10 +11,12 @@ const HomePage: React.FC<Props> = (props) => {
 
     const states = useSelector(() => controller.states)
 
-    return <>
-        <Header />
-        <Herosection />
-    </>
+    return (
+        <div >
+            <Header />
+            <Herosection />
+        </div>
+    )
 }
 
 export default HomePage

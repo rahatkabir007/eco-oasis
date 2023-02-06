@@ -3,9 +3,9 @@ import HomePage from "../components/pages/HomePage/HomePage";
 import { controller } from "../src/state/StateController";
 
 
+
 const index = () => {
   const states = useSelector(() => controller.states);
-
   return <HomePage />
 };
 

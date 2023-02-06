@@ -10,7 +10,8 @@ const Herosection: React.FC<Props> = (props) => {
     const states = useSelector(() => controller.states)
 
     return (
-        <div>
+        // bg - ecolightgreen h - [180vh]
+        <div className='container-x bg-ecolightgreen h-[180vh]'>
             Herosection
         </div>
     )

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -8,16 +8,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'nunito': ['Nunito'],
+        'poppins': ['Poppins'],
       },
       colors: {
-        'qblack': 'rgb(34 34 34/1)',
-        'qblacktext': 'rgb(29 29 29/1)',
-        'qgray': 'rgb(121 121 121/1)',
-        'qgrayBorder': 'rgb(239 239 239/1)',
-        'qyellow': 'rgb(255 187 56/1)',
-        'qred': 'rgb(239 38 44/1)',
-        'qgrayLite': 'rgb(239 239 239/1)'
+        'ecoblack': '#3B3B3B',
+        'ecolightgreen': '#00AD7F',
+        'ecogrey': '#F7F7F7',
+        'ecolightblack': '#232428',
+        'ecodarkgreen': '#165A3E',
+        'ecodarkblue': '#2D3748',
+        'ecobglightgreen': '#E6F8E8',
+        'ecobglightblack': "rgba(43, 41, 41, 0.089)"
       },
     },
   },

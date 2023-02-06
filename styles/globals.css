@@ -5,6 +5,18 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", "Nunito", sans-serif;
-  background-color: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-x {
+  max-width: 1600px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container-x {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }

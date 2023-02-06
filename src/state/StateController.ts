@@ -12,13 +12,15 @@ const composeEnhancers =
         : compose;
 
 export interface IStates {
-    counter: number
+    counter: number,
+    mounted: boolean
 }
 
 export class Controller {
     @state
     states: IStates = {
-        counter: 0
+        counter: 0,
+        mounted: false
     }
 
     @action
