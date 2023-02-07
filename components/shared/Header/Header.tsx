@@ -45,7 +45,7 @@ const Header: React.FC<Props> = (props) => {
 
 
     return (
-        <div className={`w-full sticky top-0 left-0 ${nav ? 'bg-ecobglightblack' : 'bg-transparent'}`}>
+        <div className={`w-full sticky top-0 left-0 bg-white ${nav ? 'shadow-lg' : ''}`}>
             <div className={`flex items-center justify-between py-7 md:px-10 px-7 container-x`}>
                 <div className='cursor-pointer flex items-center font-[Poppins] gap-x-24'>
                     <Link href="/"><div>
