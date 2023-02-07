@@ -54,20 +54,20 @@ const Header: React.FC<Props> = (props) => {
                         />
                     </div></Link>
                     <div>
-                        <ul className={`md:flex md:items-center gap-x-20 md:pb-0 sm:bg-transparent bg-white dark:bg-zinc-900 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[85px]' : 'top-[-490px]'}`}>
+                        <ul className={`md:flex md:items-center gap-x-20 md:pb-0 sm:bg-transparent dark:sm:bg-transparent bg-white dark:bg-zinc-900 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[85px]' : 'top-[-490px]'}`}>
                             {
                                 Links.map((link) => (
                                     <li key={link.name} className='md:mr-8 text-xl md:my-0 my-7'>
-                                        <a href={link.link} className='text-[#000000] hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 dark:text-white text-base capitalize font-medium'>{link.name}</a>
+                                        <a href={link.link} className='text-[#000000] dark:sm:text-white dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 text-base capitalize font-medium'>{link.name}</a>
                                     </li>
                                 ))
                             }
                             <div className={`${css["mobileLoginContainer"]} gap-5 mr-10`}>
                                 <div className='md:mr-8 text-xl md:my-0 my-7'>
-                                    <button className='border border-ecodarkgreen dark:border-white  rounded px-4 py-[2px] text-[#000] font-medium text-base dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen'>Login</button>
+                                    <button className='border border-ecodarkgreen dark:border-white  rounded px-4 py-[2px] text-[#000000] dark:sm:text-white dark:text-white font-medium text-base hover:text-ecolightgreen dark:hover:text-ecolightgreen'>Login</button>
                                 </div>
                                 <div className=''>
-                                    <button className='border border-ecodarkgreen dark:border-white rounded px-3 py-[2px] text-[#000] font-medium text-base dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen'>Sign Up</button>
+                                    <button className='border border-ecodarkgreen dark:border-white rounded px-3 py-[2px] text-[#000000] dark:sm:text-white dark:text-white font-medium text-base hover:text-ecolightgreen dark:hover:text-ecolightgreen'>Sign Up</button>
                                 </div>
                             </div>
                         </ul>
