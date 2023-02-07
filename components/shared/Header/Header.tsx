@@ -46,7 +46,7 @@ const Header: React.FC<Props> = (props) => {
 
     return (
         <div className={`w-full sticky top-0 left-0 ${nav ? 'bg-ecobglightblack' : 'bg-transparent'}`}>
-            <div className={`flex items-center justify-between py-6 md:px-10 px-7 container-x`}>
+            <div className={`flex items-center justify-between py-7 md:px-10 px-7 container-x`}>
                 <div className='cursor-pointer flex items-center font-[Poppins] gap-x-24'>
                     <Link href="/"><div>
                         <img src="/images/Logo.png" alt="logo"
