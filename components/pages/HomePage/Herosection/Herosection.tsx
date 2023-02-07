@@ -11,8 +11,16 @@ const Herosection: React.FC<Props> = (props) => {
 
     return (
         // bg - ecolightgreen h - [180vh]
-        <div className='container-x bg-ecolightgreen h-[180vh]'>
-            Herosection
+        <div className='container-x'>
+            <div className="flex justify-between items-center">
+                <div>
+                    <p>Bangladesh: the land of business
+                        opportunities for <span>Eco-Friendly</span> product</p>
+                </div>
+                <div>
+                    <img src="/images/LandingPageLogo.jpg" alt="" />
+                </div>
+            </div>
         </div>
     )
 }
