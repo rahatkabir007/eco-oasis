@@ -18,7 +18,8 @@ module.exports = {
         'ecodarkgreen': '#165A3E',
         'ecodarkblue': '#2D3748',
         'ecobglightgreen': '#E6F8E8',
-        'ecobglightblack': "rgba(43, 41, 41, 0.089)"
+        'ecobglightblack': "rgba(43, 41, 41, 0.089)",
+        'ecolightgrey': '#979797'
       },
     },
   },

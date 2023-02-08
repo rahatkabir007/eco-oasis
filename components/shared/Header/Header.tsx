@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes';
 import css from "./Header.module.css"
 import Link from 'next/link';
 import { Jsondata } from '../../../src/utils/Jsondata';
+import { useRouter } from 'next/router';
 
 interface Props {
 }
@@ -15,12 +16,15 @@ const Header: React.FC<Props> = (props) => {
     let [open, setOpen] = useState(false);
     const { systemTheme, theme, setTheme } = useTheme();
     const [nav, setNav] = useState(false);
+    const router = useRouter();
+    const { asPath } = router;
 
     //Tailwind Classes
     const genericHamburgerLine = `h-1 w-7 rounded-full bg-black dark:bg-white transition ease transform duration-500`;
 
     useEffect(() => {
         controller.setState({ mounted: true });
+
     }, []);
 
     if (!states.mounted) return null;
@@ -53,7 +57,9 @@ const Header: React.FC<Props> = (props) => {
                             {
                                 Jsondata.headerLinks.map((link) => (
                                     <li key={link.name} className='md:mr-8 text-xl md:my-0 my-7'>
-                                        <Link href={link.link} className='text-[#000000] dark:sm:text-white dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 text-base capitalize font-medium'>{link.name}</Link>
+                                        <Link href={link.link} className=
+                                            {`${asPath === link?.link ? "text-ecolightgreen" : "text-[#000000]"} dark:sm:text-white dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 text-base capitalize font-medium`}
+                                        >{link.name}</Link>
                                     </li>
                                 ))
                             }

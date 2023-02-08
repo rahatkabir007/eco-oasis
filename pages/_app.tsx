@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "../src/state/StateController";
 import { ThemeProvider } from "next-themes";
 import Header from "../components/shared/Header/Header";
+import Footer from "../components/shared/Footer/Footer";
 
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;
@@ -25,6 +26,7 @@ export default function MyApp(props: AppProps) {
         <React.Fragment>
           <Component {...pageProps} />
         </React.Fragment>
+        <Footer />
       </Provider>
     </ThemeProvider>
   );
