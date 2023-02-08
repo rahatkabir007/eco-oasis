@@ -4,6 +4,7 @@ import { controller } from '../../../src/state/StateController'
 import { useTheme } from 'next-themes';
 import css from "./Header.module.css"
 import Link from 'next/link';
+import { Jsondata } from '../../../src/utils/Jsondata';
 
 interface Props {
 }
@@ -35,18 +36,12 @@ const Header: React.FC<Props> = (props) => {
     }
     window.addEventListener('scroll', changeBackground)
 
-    let Links = [
-        { name: "Home", link: "/" },
-        { name: "About", link: "/about" },
-        { name: "Product", link: "/products" },
-        { name: "Blogs", link: "/blogs" },
-        { name: "Contact", link: "/contact" },
-    ];
+
 
 
     return (
-        <div className={`w-full sticky top-0 left-0 bg-white ${nav ? 'shadow-lg' : ''}`}>
-            <div className={`flex items-center justify-between py-7 md:px-10 px-7 container-x`}>
+        <div className={`w-full sticky top-0 left-0  ${nav ? 'bg-white shadow-lg dark:bg-neutral-900' : ''}`}>
+            <div className={`flex items-center justify-between py-7 px-7 md:px-0 container-x`}>
                 <div className='cursor-pointer flex items-center font-[Poppins] gap-x-24'>
                     <Link href="/"><div>
                         <img src="/images/Logo.png" alt="logo"
@@ -56,9 +51,9 @@ const Header: React.FC<Props> = (props) => {
                     <div>
                         <ul className={`md:flex md:items-center gap-x-20 md:pb-0 sm:bg-transparent dark:sm:bg-transparent bg-white dark:bg-zinc-900 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[85px]' : 'top-[-490px]'}`}>
                             {
-                                Links.map((link) => (
+                                Jsondata.headerLinks.map((link) => (
                                     <li key={link.name} className='md:mr-8 text-xl md:my-0 my-7'>
-                                        <a href={link.link} className='text-[#000000] dark:sm:text-white dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 text-base capitalize font-medium'>{link.name}</a>
+                                        <Link href={link.link} className='text-[#000000] dark:sm:text-white dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 text-base capitalize font-medium'>{link.name}</Link>
                                     </li>
                                 ))
                             }
@@ -110,7 +105,7 @@ const Header: React.FC<Props> = (props) => {
                     <div className="flex justify-center">
                         {currentTheme === 'dark' ? (
                             <button
-                                className="bg-black-700 dark:bg-gray-50 hover:bg-gray-300 dark:hover:bg-gray-300 rounded-md border-purple-400 border-2 sm:p-2 p-[3px]"
+                                className="bg-black-700 dark:bg-gray-50 hover:bg-gray-300 dark:hover:bg-gray-300 rounded-[50%] border-purple-400 border-2 sm:p-2 p-[3px]"
                                 onClick={() => setTheme('light')}
                             >
                                 {' '}
@@ -120,7 +115,7 @@ const Header: React.FC<Props> = (props) => {
                             </button>
                         ) : (
                             <button
-                                className="bg-gray-100 rounded-md border-purple-400 border-2 sm:p-2 p-[3px] hover:bg-gray-300"
+                                className="bg-gray-100 rounded-[50%] border-purple-400 border-2 sm:p-2 p-[3px] hover:bg-gray-300"
                                 onClick={() => setTheme('dark')}
                             >
                                 <img src="images/moon.svg" alt="logo"

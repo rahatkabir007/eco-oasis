@@ -12,12 +12,11 @@ const Herosection: React.FC<Props> = (props) => {
     const states = useSelector(() => controller.states)
 
     return (
-        // bg - ecolightgreen h - [180vh]
         <div className='container-x'>
             <div className="flex justify-between items-start px-28 py-24 gap-[150px]">
                 <div className="w-1/2 flex flex-col gap-y-16">
                     <div>
-                        <p className="text-ecodarkgreen text-[39px]">Bangladesh: the land of business
+                        <p className="text-ecodarkgreen text-[39px] dark:text-white">Bangladesh: the land of business
                             opportunities for <span className="font-semibold">Eco-Friendly</span> product</p>
                     </div>
                     <div className="">
