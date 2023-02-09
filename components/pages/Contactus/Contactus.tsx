@@ -11,7 +11,7 @@ const Contactus: React.FC<Props> = (props) => {
 
     return (
         <div className='container-x'>
-            <div className='flex flex-col md:flex-row my-10 mb-20 justify-evenly  p-8 md:p-0'>
+            <div className='flex flex-col md:flex-row my-10 mb-20 justify-evenly p-8 md:p-0'>
                 <div className='flex flex-col gap-y-8'>
                     <div>
                         <p className='text-xl text-black dark:text-white'>How can we assist you in your project?</p>

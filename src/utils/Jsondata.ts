@@ -28,4 +28,46 @@ export class Jsondata {
             padding: "3rem 4.2rem"
         },
     ]
+
+    static blogsData = [
+        {
+            image: "/images/Group46.png",
+            category: "Jute",
+            redingDuration: "5 min read",
+            title: "Simple Jute products to boost your ambient system"
+        },
+        {
+            image: "/images/Group47.png",
+            category: "Jute",
+            redingDuration: "5 min read",
+            title: "Simple Jute products to boost your ambient system"
+        },
+        {
+            image: "/images/Group48.png",
+            category: "Jute",
+            redingDuration: "5 min read",
+            title: "Simple Jute products to boost your ambient system"
+        },
+
+    ]
+
+    static blogsTrendingData = [
+        {
+            image: "/images/Group23.png",
+            title: "Fruit juices to boost your immune",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        },
+        {
+            image: "/images/Group24.png",
+            title: "Juice variations using avocado",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        },
+        {
+            image: "/images/Group25.png",
+            title: "Simple recipe strawberry juice",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        },
+
+
+    ]
 }
