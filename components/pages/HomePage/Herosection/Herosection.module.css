@@ -1,0 +1,39 @@
+.imgContainer {
+    display: block;
+    width: 100%;
+}
+
+/* Mobile device */
+@media only screen and (max-width:688px) {
+
+    .bg {
+        background-image: url(/images/LandingPageLogo.jpg);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
+
+    .imgContainer {
+        display: none;
+    }
+
+}
+
+
+/* Tab */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .bg {
+        background-image: url(/images/LandingPageLogo.jpg);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+
+    .imgContainer {
+        display: none;
+    }
+}

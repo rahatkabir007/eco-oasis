@@ -44,7 +44,7 @@ const Header: React.FC<Props> = (props) => {
 
 
     return (
-        <div className={`w-full sticky top-0 left-0  ${nav ? 'bg-white shadow-lg dark:bg-neutral-900' : ''}`}>
+        <div className={`w-full sticky top-0 left-0  ${nav ? 'bg-white shadow-lg dark:bg-ecolightblack' : ''}`}>
             <div className={`flex items-center justify-between py-7 px-7 md:px-12 container-x`}>
                 <div className='cursor-pointer flex items-center font-[Poppins] gap-x-24'>
                     <Link href="/"><div>
@@ -53,7 +53,7 @@ const Header: React.FC<Props> = (props) => {
                         />
                     </div></Link>
                     <div>
-                        <ul className={`md:flex md:items-center gap-x-20 md:pb-0 sm:bg-transparent dark:sm:bg-transparent bg-white dark:bg-zinc-900 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[85px]' : 'top-[-490px]'}`}>
+                        <ul className={`md:flex md:items-center gap-x-20 md:pb-0 sm:bg-transparent dark:sm:bg-transparent bg-white dark:bg-[#121212] pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[85px]' : 'top-[-490px]'}`}>
                             {
                                 Jsondata.headerLinks.map((link) => (
                                     <li key={link.name} className='md:mr-8 text-xl md:my-0 my-7'>

@@ -41,7 +41,7 @@ const Products: React.FC<Props> = (props) => {
 
     return (
         <div className="container-x">
-            <div className='flex flex-col px-2 md:px-20 '>
+            <div className='flex flex-col px-2 md:px-20 mt-10'>
                 <div className="flex">
                     <div>
                         <input type="text" placeholder='Search' className="outline-none border-2 border-[#00AD7F] text-[#92B1A4] rounded-l-lg py-[7px] px-2 w-[160px] md:w-[421px] dark:bg-transparent dark:text-white" />
