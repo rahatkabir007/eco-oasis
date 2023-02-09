@@ -1,0 +1,54 @@
+.leftForm input {
+    background-color: #E6F8E8;
+    border-radius: 9px;
+    width: 714px;
+    height: 50px;
+    color: #92B1A4;
+    padding: 27px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+}
+
+.leftForm textarea {
+    background-color: #E6F8E8;
+    border-radius: 9px;
+    width: 714px;
+    height: 101px;
+    color: #92B1A4;
+    padding: 27px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    resize: none;
+    outline: none;
+}
+
+.rightForm textarea {
+    background-color: #E6F8E8;
+    border-radius: 9px;
+    width: 284px;
+    height: 140px;
+    color: #92B1A4;
+    padding: 20px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    resize: none;
+    outline: none;
+}
+
+
+/* Mobile device */
+@media only screen and (max-width:688px) {
+
+    .leftForm input,
+    .leftForm textarea,
+    .rightForm input {
+        width: 100%;
+    }
+
+
+}
+
+
+/* Tab */
+@media only screen and (min-width: 688px) and (max-width: 992px) {}

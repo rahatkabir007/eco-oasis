@@ -45,7 +45,7 @@ const Header: React.FC<Props> = (props) => {
 
     return (
         <div className={`w-full sticky top-0 left-0  ${nav ? 'bg-white shadow-lg dark:bg-neutral-900' : ''}`}>
-            <div className={`flex items-center justify-between py-7 px-7 md:px-0 container-x`}>
+            <div className={`flex items-center justify-between py-7 px-7 md:px-12 container-x`}>
                 <div className='cursor-pointer flex items-center font-[Poppins] gap-x-24'>
                     <Link href="/"><div>
                         <img src="/images/Logo.png" alt="logo"
@@ -121,7 +121,7 @@ const Header: React.FC<Props> = (props) => {
                             </button>
                         ) : (
                             <button
-                                className="bg-gray-100 rounded-[50%] border-purple-400 border-2 sm:p-2 p-[3px] hover:bg-gray-300"
+                                className="bg-gray-100 rounded-[50%] border-purple-400 border-2 sm:p-2 p-[6px] hover:bg-gray-300"
                                 onClick={() => setTheme('dark')}
                             >
                                 <img src="images/moon.svg" alt="logo"

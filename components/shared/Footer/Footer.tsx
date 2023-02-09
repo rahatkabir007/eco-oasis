@@ -12,8 +12,8 @@ const Footer: React.FC<Props> = (props) => {
 
     return (
         <div className="bg-ecolightblack mt-10">
-            <div className="flex flex-col md:flex-row py-28 container-x gap-y-9 gap-x-28">
-                <div className="flex flex-col gap-8 ">
+            <div className="flex flex-col md:flex-row py-24 container-x gap-y-9 gap-x-16" style={{ paddingLeft: '4rem', paddingRight: '4rem' }}>
+                <div className="flex flex-col gap-9">
                     <div>
                         <img src="/images/Frame.svg" alt="" />
                     </div>
@@ -24,7 +24,7 @@ const Footer: React.FC<Props> = (props) => {
                         <a href="" className="text-ecolightgrey"><p>Terms & Conditions</p></a>
                     </div>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 flex-1 px-0 md:px-8">
                     <div>
                         <p className="text-white">Headquarter</p>
                     </div>
@@ -40,7 +40,7 @@ const Footer: React.FC<Props> = (props) => {
                             PO : 4203, Bangladesh.</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 px-0 md:px-28">
                     <div>
                         <p className='text-white'>Website</p>
                     </div>
@@ -54,7 +54,7 @@ const Footer: React.FC<Props> = (props) => {
                         }
                     </div>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 px-0 md:px-8">
                     <div>
                         <p className="text-white">Social</p>
                     </div>
