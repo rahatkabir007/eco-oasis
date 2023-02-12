@@ -18,13 +18,12 @@ const Products: React.FC<Props> = (props) => {
 
 
     useEffect(() => {
+
         fetch("/products.json")
             .then(res => res.json())
             .then(data => {
                 setProducts(data)
-                setFilteredProducts(data.filter((product: IProducts) => {
-                    return product.category.includes("All Products")
-                }))
+                setFilteredProducts(data)
             })
 
     }, [])
@@ -33,40 +32,43 @@ const Products: React.FC<Props> = (props) => {
         setSelected(item)
         setTimeout(() => {
             if (item === 'All Products') {
-                setFilteredProducts(products.filter((product) => product.category.includes("All Products")));
+                setFilteredProducts(products);
             } else {
-                setFilteredProducts(products.filter((product) => product.category.includes(item)));
+                setFilteredProducts(products.filter((product) => product.category === item));
             }
         }, 500);
     }
 
-    const handleChange = (e: any) => {
+    const handleChangeSearch = (e: any) => {
         const value = e.target.value;
         setSearch(value);
+    }
+    const handleChangeSelect = (e: any) => {
+        const value = e.target.value;
         setSelect(value);
     }
+
     const handleSearch = (e: any) => {
         e.preventDefault()
-        // setFilteredProducts(products.filter((product) => {
-        //     return product.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
-        // }))
-        setFilteredProducts(products.filter((product) => product.name.toLowerCase().includes(search.toLowerCase())))
-        if (select === "All Categories") {
-            setFilteredProducts(products.filter((product) => product.category.includes("All Products")))
-        }
-
+        setFilteredProducts(products.filter((product) => {
+            if (select === 'All Categories') {
+                return product.name.toLowerCase().includes(search.toLowerCase())
+            } else {
+                return product.category === select && product.name.toLowerCase().includes(search.toLowerCase())
+            }
+        }))
     }
 
 
     return (
         <div className="container-x">
             <div className='flex flex-col px-2 md:px-20 mt-10'>
-                <form className="flex" onClick={handleSearch}>
+                <form className="flex" onSubmit={handleSearch}>
                     <div>
-                        <input type="text" placeholder='Search' className="outline-none border-2 border-[#00AD7F] text-[#92B1A4] rounded-l-lg py-[7px] px-2 w-[160px] md:w-[421px] dark:bg-transparent dark:text-white" onChange={handleChange} />
+                        <input type="text" placeholder='Search' className="outline-none border-2 border-[#00AD7F] text-[#92B1A4] rounded-l-lg py-[7px] px-2 w-[160px] md:w-[421px] dark:bg-transparent dark:text-white" onChange={handleChangeSearch} />
                     </div>
                     <div>
-                        <select onChange={handleChange} className="outline-none border-2 border-l-0 border-[#00AD7F] text-[#1c1c1c] text-sm py-[8px] px-2 w-[100px] md:w-[145px] dark:bg-transparent dark:text-white">
+                        <select onChange={handleChangeSelect} className="outline-none border-2 border-l-0 border-[#00AD7F] text-[#1c1c1c] text-sm py-[8px] px-2 w-[100px] md:w-[145px] dark:bg-transparent dark:text-white">
                             <option value="All Categories" selected className='text-[#1c1c1c] dark:bg-transparent dark:text-white'>All Categories</option>
                             {
                                 Jsondata.productCategories.slice(1).map((item, ind) => {
