@@ -66,7 +66,7 @@ const Products: React.FC<Props> = (props) => {
                         <input type="text" placeholder='Search' className="outline-none border-2 border-[#00AD7F] text-[#92B1A4] rounded-l-lg py-[7px] px-2 w-[160px] md:w-[421px] dark:bg-transparent dark:text-white" onChange={handleChange} />
                     </div>
                     <div>
-                        <select onChange={handleChange} className="outline-none border-2 border-l-0 border-[#00AD7F] text-[#1c1c1c] text-sm py-[8px] px-2 w-[100px] md:w-[145px] dark:bg-transparent dark:text-white">
+                        <select onChange={handleChange} className="outline-none border-2 border-l-0 border-[#00AD7F] text-[#1c1c1c] text-sm py-[8.5px] px-2 w-[100px] md:w-[145px] dark:bg-transparent dark:text-white">
                             <option value="All Categories" selected className='text-[#1c1c1c] dark:bg-transparent dark:text-white'>All Categories</option>
                             {
                                 Jsondata.productCategories.slice(1).map((item, ind) => {
@@ -78,7 +78,7 @@ const Products: React.FC<Props> = (props) => {
                         </select>
                     </div>
                     <div>
-                        <button type='submit' className="text-base bg-ecolightgreen text-white font-medium px-5 py-[9px] rounded-r-lg">
+                        <button type='submit' className="text-base bg-ecolightgreen text-white font-medium px-5 py-[8.5px] rounded-r-lg">
                             Search
                         </button>
                     </div>
