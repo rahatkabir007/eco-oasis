@@ -14,10 +14,10 @@ const Herosection: React.FC<Props> = (props) => {
 
     return (
         <div className=''>
-            <div className={`block md:flex justify-between items-start py-20 px-8 md:px-28 md:py-24 gap-[150px] ${css["bg"]}`}>
+            <div className={`block md:flex justify-between items-start py-20 px-10 md:px-28 md:py-24 gap-[150px] ${css["bg"]}`}>
                 <div className="container-x flex flex-col gap-y-10 md:gap-y-16">
                     <div className="w-full md:w-1/2 ">
-                        <p className="text-herogreen text-[20px] md:text-[39px] dark:text-white"> <span className='font-semibold'>Bangladesh:</span>
+                        <p className="text-herogreen text-[20px] md:text-[49px] dark:text-white"> <span className='font-semibold'>Bangladesh:</span>
                             <br />The Land of<br />
                             <span className='font-semibold'>Business Opportunities</span></p>
                     </div>
