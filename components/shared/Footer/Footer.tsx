@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { Jsondata } from '../../../src/utils/Jsondata'
-
+import css from "../Header/Header.module.css"
 
 interface Props {
 }
@@ -12,10 +12,12 @@ const Footer: React.FC<Props> = (props) => {
 
     return (
         <div className="bg-ecolightblack mt-10">
-            <div className="conatiner-x px-4 md:px-10 lg:px-4 flex flex-col lg:flex-row justify-evenly items-start py-24 gap-y-9 gap-x-16">
+            <div className="conatiner-x px-4 md:px-10 lg:px-4 flex flex-col lg:flex-row justify-evenly items-start py-24 gap-y-9 gap-x-10">
                 <div className="flex flex-col justify-center items-start gap-9">
                     <div>
-                        <img src="/images/Frame.svg" alt="" />
+                        <img src="/images/Logo.png" alt=""
+                            className={css["logo"]}
+                        />
                     </div>
                     <div>
                         <p className="text-ecolightgrey">©2023 Eco Oasis Limited, All Right Reserved</p>
