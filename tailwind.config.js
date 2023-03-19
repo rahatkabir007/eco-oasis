@@ -18,10 +18,22 @@ module.exports = {
         'ecodarkgreen': '#165A3E',
         'ecodarkblue': '#2D3748',
         'ecobglightgreen': '#E6F8E8',
-        'ecobglightblack': "rgba(43, 41, 41, 0.089)",
-        'ecolightgrey': '#979797'
+        'ecobglightblack': "rgba(0, 0, 0, 0.7)",
+        'ecolightgrey': '#979797',
+        'herogreen': "#DFFFBE"
       },
     },
+
+    screens: {
+      // 'xs': '0px',
+      // 'sm': '670px',
+      // 'md': '1148px',
+      'xs': '300px',
+      'sm': '699px',
+      'md': '700px',
+      'lg': '1275px',
+      // 'xl': '1920px'
+    }
   },
   plugins: [],
 };

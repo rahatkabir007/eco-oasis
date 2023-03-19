@@ -11,7 +11,7 @@
 }
 
 /* Mobile device */
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:699px) {
     .desktopLoginContainer {
         display: none;
     }
@@ -25,4 +25,12 @@
 
 
 /* Tab */
-@media only screen and (min-width: 688px) and (max-width: 992px) {}
+@media only screen and (min-width: 699px) and (max-width: 1275px) {
+    .desktopLoginContainer {
+        display: none;
+    }
+
+    .mobileLoginContainer {
+        display: block;
+    }
+}
