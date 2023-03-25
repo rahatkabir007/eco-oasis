@@ -64,14 +64,14 @@ const Header: React.FC<Props> = (props) => {
                                     </li>
                                 ))
                             }
-                            <div className={`${css["mobileLoginContainer"]} gap-5 mr-10`}>
+                            {/* <div className={`${css["mobileLoginContainer"]} gap-5 mr-10`}>
                                 <div className='lg:mr-8 text-xl lg:my-0 my-7'>
                                     <button className='border border-ecodarkgreen dark:border-white  rounded px-4 py-[2px] text-[#000000] dark:sm:text-white dark:text-white font-medium text-base hover:text-ecolightgreen dark:hover:text-ecolightgreen'>Login</button>
                                 </div>
                                 <div className=''>
                                     <button className='border border-ecodarkgreen dark:border-white rounded px-3 py-[2px] text-[#000000] dark:sm:text-white dark:text-white font-medium text-base hover:text-ecolightgreen dark:hover:text-ecolightgreen'>Sign Up</button>
                                 </div>
-                            </div>
+                            </div> */}
                         </ul>
                     </div>
                 </div>
@@ -101,14 +101,14 @@ const Header: React.FC<Props> = (props) => {
                             />
                         </button>
                     </div>
-                    <div className={`${css["desktopLoginContainer"]} gap-5 mr-10`}>
+                    {/* <div className={`${css["desktopLoginContainer"]} gap-5 mr-10`}>
                         <div className=''>
                             <button className={`${nav ? "text-white" : "text-black"} border border-ecodarkgreen dark:border-white  rounded px-4 py-[2px] font-medium text-base dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen`}>Login</button>
                         </div>
                         <div className=''>
                             <button className={`${nav ? "text-white" : "text-black"} border border-ecodarkgreen dark:border-white rounded px-3 py-[2px] font-medium text-base dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen`}>Sign Up</button>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="flex justify-center">
                         {currentTheme === 'dark' ? (
                             <button

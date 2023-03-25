@@ -4,8 +4,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
-    /* height: 100%; */
+    height: 100%;
 }
 
 /* Mobile device */
@@ -17,7 +16,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 50vh;
+        height: 100%;
     }
 
 
@@ -32,7 +31,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 70vh;
+        height: 100%;
     }
 
 }
