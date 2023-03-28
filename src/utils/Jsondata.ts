@@ -70,7 +70,32 @@ export class Jsondata {
 
     ]
 
-    static productCategories = ["All Products", "Jute", "Leather", "Accessories", "Basket"]
+    static productCategories = [
+        {
+            id: 1,
+            category: "Accessories",
+            image: "/images/accessories.JPG",
+            url: "accessories"
+        },
+        {
+            id: 2,
+            category: "Basket",
+            image: "/images/basket.jpeg",
+            url: "basket"
+        },
+        {
+            id: 3,
+            category: "Jute",
+            image: "/images/jute.JPG",
+            url: "jute"
+        },
+        {
+            id: 4,
+            category: "Leather",
+            image: "/images/leather.png",
+            url: "leather"
+        },
+    ]
 
     static products = [
         {
