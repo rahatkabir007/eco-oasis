@@ -18,3 +18,17 @@
 .header p:hover {
     --_p: 100%
 }
+
+
+@media only screen and (max-width:768px) {
+    .header p {
+        font-size: 2rem;
+        margin-left: 8px;
+    }
+
+
+}
+
+
+/* Tab */
+@media only screen and (min-width: 769px) and (max-width: 1135px) {}
