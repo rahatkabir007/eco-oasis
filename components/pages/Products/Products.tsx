@@ -71,7 +71,7 @@ const Products: React.FC<Props> = (props) => {
                 {
                     Jsondata.productCategories.map((item) => {
                         return (
-                            <Link href={"/"}>
+                            <Link href={`/products/category/${item.url}`}>
                                 <div className={`${styles["container"]} w-full h-[300px] sm:h-[400px] md:w-[600px] md:h-[400px]`}
                                     style={{
                                         backgroundImage: ` url(${item.image})`
