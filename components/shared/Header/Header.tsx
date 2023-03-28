@@ -47,12 +47,13 @@ const Header: React.FC<Props> = (props) => {
     return (
         <div className={`w-full sticky top-0 left-0 transition ease duration-300 ${nav ? 'bg-ecobglightblack shadow-lg dark:bg-ecolightblack' : ''}`}>
             <div className={`flex items-center justify-between py-7 px-7 lg:px-12 container-x`}>
-                <div className='cursor-pointer flex items-center font-[Poppins] gap-x-24'>
-                    <Link href="/"><div>
+                <div
+                    className={`${css["logodiv"]} cursor-pointer inline md:flex items-center font-[Poppins] gap-x-24`}>
+                    <Link href="/">
                         <img src="/images/Logo.png" alt="logo"
                             className={css["logo"]}
                         />
-                    </div></Link>
+                    </Link>
                     <div>
                         <ul className={`lg:flex lg:items-center gap-x-20 lg:pb-0 lg:bg-transparent dark:lg:bg-transparent bg-white dark:bg-[#121212] pb-12 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[100px]' : 'top-[-490px]'}`}>
                             {
@@ -77,7 +78,7 @@ const Header: React.FC<Props> = (props) => {
                 </div>
 
                 <div className='flex justify-center items-center lg:flex-row flex-row-reverse'>
-                    <div className="ml-4">
+                    <div className={`${css["hamburgerdiv"]} ml-4`}>
                         <button
                             className="flex flex-col h-12 rounded justify-center cursor-pointer lg:hidden group"
                             onClick={() => setOpen(!open)}

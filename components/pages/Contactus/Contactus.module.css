@@ -38,7 +38,7 @@
 
 
 /* Mobile device */
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:768px) {
 
     .leftForm input,
     .leftForm textarea,
@@ -51,4 +51,4 @@
 
 
 /* Tab */
-@media only screen and (min-width: 688px) and (max-width: 992px) {}
+@media only screen and (min-width: 768px) and (max-width: 1135px) {}

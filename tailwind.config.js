@@ -25,14 +25,11 @@ module.exports = {
     },
 
     screens: {
-      // 'xs': '0px',
-      // 'sm': '670px',
-      // 'md': '1148px',
       'xs': '300px',
-      'sm': '699px',
-      'md': '700px',
-      'lg': '1275px',
-      // 'xl': '1920px'
+      //ekhane sm - 768px mane hocche 768px theke 1134px porjonto shob sm size mane tab theke mobile
+      'sm': '768px',
+      'md': '1135px',
+      'lg': '1612px',
     }
   },
   plugins: [],
