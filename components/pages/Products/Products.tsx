@@ -67,7 +67,7 @@ const Products: React.FC<Props> = (props) => {
             <div className='my-1'>
                 <SectionHeader title="Product Categories" fontSize="4rem" />
             </div>
-            <div className='p-12 grid grid-cols-1 md:grid-cols-2  gap-y-20'>
+            <div className='p-12 grid grid-cols-1 md:grid-cols-2 gap-y-20'>
                 {
                     Jsondata.productCategories.map((item) => {
                         return (
