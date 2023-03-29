@@ -12,55 +12,6 @@ interface Props {
 const Products: React.FC<Props> = (props) => {
 
     const states = useSelector(() => controller.states)
-    const [products, setProducts] = useState<Array<IProducts>>([])
-    const [filteredProducts, setFilteredProducts] = useState<Array<IProducts>>([])
-    const [selected, setSelected] = useState("All Products");
-    const [search, setSearch] = useState("");
-    const [select, setSelect] = useState("All Categories");
-
-
-    useEffect(() => {
-
-        fetch("/products.json")
-            .then(res => res.json())
-            .then(data => {
-                setProducts(data)
-                setFilteredProducts(data)
-            })
-
-    }, [])
-
-    const handleProductsFilter = (item: string) => {
-        setSelected(item)
-        setTimeout(() => {
-            if (item === 'All Products') {
-                setFilteredProducts(products);
-            } else {
-                setFilteredProducts(products.filter((product) => product.category === item));
-            }
-        }, 500);
-    }
-
-    const handleChangeSearch = (e: any) => {
-        const value = e.target.value;
-        setSearch(value);
-    }
-    const handleChangeSelect = (e: any) => {
-        const value = e.target.value;
-        setSelect(value);
-    }
-
-    const handleSearch = (e: any) => {
-        e.preventDefault()
-        setFilteredProducts(products.filter((product) => {
-            if (select === 'All Categories') {
-                return product.name.toLowerCase().includes(search.toLowerCase())
-            } else {
-                return product.category === select && product.name.toLowerCase().includes(search.toLowerCase())
-            }
-        }))
-    }
-
 
     return (
         <div className="container-x">

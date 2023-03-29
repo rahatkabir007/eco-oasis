@@ -9,6 +9,6 @@ export type IProducts = {
   id: number,
   category: string,
   name: string,
-  price: string,
+  subcategory: string,
   image: string,
 }

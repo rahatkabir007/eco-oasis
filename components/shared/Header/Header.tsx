@@ -6,6 +6,8 @@ import css from "./Header.module.css"
 import Link from 'next/link';
 import { Jsondata } from '../../../src/utils/Jsondata';
 import { useRouter } from 'next/router';
+import SvgIconRenderer from '../../helpers/SvgIconRenderer';
+import { SvgPaths } from '../../../src/utils/SvgPaths';
 
 interface Props {
 }
@@ -45,7 +47,7 @@ const Header: React.FC<Props> = (props) => {
 
 
     return (
-        <div className={`w-full sticky top-0 left-0 transition ease duration-300 ${nav ? 'bg-ecobglightblack shadow-lg dark:bg-ecolightblack' : ''}`}>
+        <div className={`w-full sticky top-0 left-0 transition ease duration-300 z-10 ${nav ? 'bg-ecobglightblack shadow-lg dark:bg-ecolightblack' : ''}`}>
             <div className={`flex items-center justify-between py-7 px-7 lg:px-12 container-x`}>
                 <div
                     className={`${css["logodiv"]} cursor-pointer inline md:flex items-center font-[Poppins] gap-x-24`}>
@@ -116,9 +118,12 @@ const Header: React.FC<Props> = (props) => {
                                 className="bg-black-700 dark:bg-gray-50 hover:bg-gray-300 dark:hover:bg-gray-300 rounded-[50%] border-purple-400 border-2 sm:p-2 p-[3px]"
                                 onClick={() => setTheme('light')}
                             >
-                                {' '}
-                                <img src="images/sun.svg" alt="logo"
-                                    className="sm:w-[30px] sm:h-[30px] w-[20px] h-[20px]"
+                                <SvgIconRenderer
+                                    width="20px"
+                                    height="20px"
+                                    viewBox="0 0 20 20"
+                                    path={SvgPaths?.sun}
+                                    pathFill={"#9333ea"}
                                 />
                             </button>
                         ) : (
@@ -126,8 +131,12 @@ const Header: React.FC<Props> = (props) => {
                                 className="bg-gray-100 rounded-[50%] border-purple-400 border-2 sm:p-2 p-[6px] hover:bg-gray-300"
                                 onClick={() => setTheme('dark')}
                             >
-                                <img src="images/moon.svg" alt="logo"
-                                    className="sm:w-[30px] sm:h-[30px] w-[20px] h-[20px]"
+                                <SvgIconRenderer
+                                    width="24px"
+                                    height="24px"
+                                    viewBox="0 0 24 24"
+                                    path={SvgPaths?.moon}
+                                    pathFill={"#9333ea"}
                                 />
                             </button>
                         )}

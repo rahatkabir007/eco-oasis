@@ -11,8 +11,6 @@
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
     transition: 0.5s;
-    /* font-size: 4rem; */
-    cursor: pointer;
 }
 
 .header p:hover {

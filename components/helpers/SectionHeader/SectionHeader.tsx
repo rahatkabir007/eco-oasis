@@ -17,7 +17,7 @@ const SectionHeader: React.FC<Props> = ({ title, fontSize }) => {
                 fontSize: fontSize
             }}
         >
-            <p>{title}</p>
+            <p className='dark:text-white'>{title}</p>
         </div>
     )
 }
