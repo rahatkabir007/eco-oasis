@@ -70,7 +70,8 @@ const Contactus: React.FC<Props> = (props) => {
                                     <p className='text-xl font-bold text-ecodarkgreen dark:text-white'>Headquarter</p>
                                 </div>
                                 <div className={`${css["rightForm"]} flex flex-col gap-y-6`}>
-                                    <p className='text-xl text-[#3B3B3B] dark:text-white '>Kabir Manzil, Flat # 14,<br /> House # 76A, 1 Number<br /> Zakir Hossain Road, Khulshi. <br />Chattogram 4225, Bangladesh</p>
+                                    <p className='text-xl text-[#3B3B3B] dark:text-white '>
+                                        Kabir Manzil, Flat # 14,<br /> House # 76A, 1 Number<br /> Zakir Hossain Road, Khulshi,<br />PO : 4225, Chattogram, Bangladesh.</p>
                                 </div>
                             </div>
                         </div>
