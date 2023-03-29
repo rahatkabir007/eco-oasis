@@ -13,8 +13,8 @@ const Card: React.FC<Props> = ({ item }) => {
 
     return <>
         <div className='bg-ecogrey h-[400px] shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-md w-full md:w-[85%] mx-auto cursor-pointer'>
-            <div>
-                <img className='w-full h-[300px] object-cover rounded-t-md rounded-b-2xl' src={item.image} alt="" />
+            <div className='bg-white'>
+                <img className='w-full h-[300px] object-cover rounded-t-md rounded-b-2xl ' src={item.image} alt={item.name} />
             </div>
             <div className="mt-6 ml-6 flex flex-col justify-start items-start">
                 <span className="text-xl font-semibold text-ecolightblack">{item.name}</span>
