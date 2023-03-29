@@ -12,7 +12,7 @@ const SectionHeader: React.FC<Props> = ({ title, fontSize }) => {
     return (
         <div
             // className={`${styles["header"]} text-[${fontSize}]`}
-            className={styles["header"]}
+            className={`${styles["header"]} ml-[1rem] md:ml-[5rem]`}
             style={{
                 fontSize: fontSize
             }}
