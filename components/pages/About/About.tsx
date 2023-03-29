@@ -25,7 +25,7 @@ const About: React.FC<Props> = (props) => {
                     {
                         Jsondata.aboutData.map(item => {
                             return (
-                                <div className={`rounded-lg w-[292px] bg-ecobglightgreen text-center overflow-hidden md:overflow-scroll lg:overflow-hidden`} style={{
+                                <div className={`rounded-lg w-[292px] bg-ecobglightgreen text-center overflow-hidden sm:overflow-scroll lg:overflow-hidden`} style={{
                                     height: item.height
                                 }}>
                                     <div

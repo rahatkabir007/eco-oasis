@@ -8,7 +8,7 @@ const AboutSection: React.FC<Props> = (props) => {
 
 
     return (
-        <div className='flex flex-col items-center text-center w-full p-4 md:p-0 md:w-[60%] mx-auto my-12 md:my-24'>
+        <div className='flex flex-col items-center text-center w-full p-4 md:p-0 sm:w-[80%] lg:w-[60%] mx-auto my-12 md:my-24'>
             <div>
                 <p className="text-[30px] text-[#165A3E] ">Overview</p>
             </div>

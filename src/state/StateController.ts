@@ -13,14 +13,16 @@ const composeEnhancers =
 
 export interface IStates {
     counter: number,
-    mounted: boolean
+    mounted: boolean,
+    open: boolean
 }
 
 export class Controller {
     @state
     states: IStates = {
         counter: 0,
-        mounted: false
+        mounted: false,
+        open: false
     }
 
     @action

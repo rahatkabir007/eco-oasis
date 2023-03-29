@@ -15,6 +15,14 @@ const Products: React.FC<Props> = (props) => {
 
     return (
         <div className="container-x">
+            <div className='flex flex-col items-center text-center w-full p-4 md:p-0 md:w-[60%] mx-auto my-12 md:my-24'>
+                <div>
+                    <p className="text-xl text-ecodarkgreen font-semibold it">Eco Oasis Limited: Who we are</p>
+                </div>
+                <div className='mt-[13px]'>
+                    <p className="text-[15px] text-ecoblack dark:text-white">Shareholder’s knowledge, skills, customized mindset, innovative thinking widened in the field of Merchandising, Operations, Human Capital management, enterprise project management, and logistics service have broadened the scope to meet customized demand and deal the business in befitting manner.  Eco Oasis wants to be a true partner instead of a profit aiming entity and wants to build a long-term business association towards its vision.</p>
+                </div>
+            </div>
             <div className='my-1'>
                 <SectionHeader title="Product Categories" fontSize="4rem" />
             </div>
