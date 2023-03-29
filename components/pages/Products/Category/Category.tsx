@@ -40,11 +40,8 @@ const Category: React.FC<Props> = (props) => {
     return (
         <>
             <div className='container-x'>
-                <div className='my-2'>
-                    <SectionHeader title='Products' fontSize="4rem" />
-                    <div className='my-6'>
-                        <Subcategory filteredProducts={filteredProducts} subCategory={subCategory} />
-                    </div>
+                <div className='my-6'>
+                    <Subcategory filteredProducts={filteredProducts} subCategory={subCategory} />
                 </div>
             </div>
         </>

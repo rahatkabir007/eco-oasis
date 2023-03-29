@@ -4,6 +4,7 @@ import { controller } from '../../../../../src/state/StateController'
 import styles from "../Category.module.css"
 import Card from '../Card/Card';
 import { IProducts } from '../../../../../interfaces/models';
+import SectionHeader from '../../../../helpers/SectionHeader/SectionHeader';
 
 interface Props {
     filteredProducts: Array<IProducts>,
@@ -23,8 +24,8 @@ const Subcategory: React.FC<Props> = ({
                 subCategory.map(sub => {
                     return (
                         <div>
-                            <div className="bg-ecolightgreen flex justify-center items-center py-8 my-3 rounded">
-                                <span className='text-3xl text-white'> {sub}</span>
+                            <div className="mt-10">
+                                <SectionHeader title={sub} fontSize="2rem" />
                             </div>
                             <div className='px-[8rem] py-[3rem] relative grid grid-cols-1 md:grid-cols-3 gap-x-[6rem] gap-y-[4rem]'>
                                 {
