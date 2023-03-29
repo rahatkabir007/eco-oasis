@@ -21,22 +21,6 @@ const Card: React.FC<Props> = ({ item }) => {
                 <span className="text-md font-medium text-ecodarkblue">{item.category}</span>
             </div>
         </div>
-        {/* <div className="card">
-            <div className="card__side card__side--front card__side--front-1"
-                style={{
-                    backgroundImage: `url(${item.image})`,
-                    backgroundPosition: "center",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat",
-                    width: '85%',
-                    margin: '0 auto'
-                }}
-            >
-            </div>
-            <div className="card__side card__side--back card__side--back-1 flex justify-center items-center">
-                <p>{item.name}</p>
-            </div>
-        </div> */}
     </>
 }
 
