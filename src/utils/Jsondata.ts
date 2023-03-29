@@ -230,42 +230,42 @@ export class Jsondata {
                 category: "Jute",
                 subcategory: "Jute Ladies Bag",
                 name: "Jute Ladies Bag 1",
-                image: "https://i.ibb.co/b6HMWXj/1.jpg",
+                image: "https://i.ibb.co/X36VDcT/1-removebg-preview.jpg",
             },
             {
                 id: 20,
                 category: "Jute",
                 subcategory: "Jute Ladies Bag",
                 name: "Jute Ladies Bag 2",
-                image: "https://i.ibb.co/N1B57GC/2.jpg",
+                image: "https://i.ibb.co/PgyPxZJ/2-removebg-preview.jpg",
             },
             {
                 id: 21,
                 category: "Jute",
                 subcategory: "Jute Ladies Bag",
                 name: "Jute Ladies Bag 3",
-                image: "https://i.ibb.co/rmLvktH/3.jpg",
+                image: "https://i.ibb.co/nryTyP3/3-removebg-preview.jpg",
             },
             {
                 id: 22,
                 category: "Jute",
                 subcategory: "Jute Ladies Bag",
                 name: "Jute Ladies Bag 4",
-                image: "https://i.ibb.co/BrQL95R/4.jpg",
+                image: "https://i.ibb.co/fS33FyX/4-removebg-preview.jpg",
             },
             {
                 id: 23,
                 category: "Jute",
                 subcategory: "Jute Ladies Bag",
                 name: "Jute Ladies Bag 5",
-                image: "https://i.ibb.co/YpJDLfL/5.jpg",
+                image: "https://i.ibb.co/vXQMRnB/5-removebg-preview.jpg",
             },
             {
                 id: 24,
                 category: "Jute",
                 subcategory: "Jute Ladies Bag",
                 name: "Jute Ladies Bag 6",
-                image: "https://i.ibb.co/M7pc4wG/6.jpg",
+                image: "https://i.ibb.co/chMs8Zv/6-removebg-preview.jpg",
             },
             {
                 id: 25,
@@ -568,133 +568,5 @@ export class Jsondata {
                 name: "Wall Lamp",
                 image: "https://i.ibb.co/bmxbRdt/Wall-Lamp-1.jpg",
             },
-            // {
-            //     id: 1,
-            //     category: "Jute",
-            //     name: "Jute 1",
-            //     price: "18",
-            //     image: "/images/jute/1.jpeg",
-
-            // },
-            // {
-            //     id: 2,
-            //     category: "Leather",
-            //     name: "Leather 1",
-            //     price: "23",
-            //     image: "/images/leather/1.jpeg",
-
-            // },
-            // {
-            //     id: 3,
-            //     category: "Accessories",
-            //     name: "Accessories 1",
-            //     price: "19",
-            //     image: "/images/accessories/1.JPG",
-
-            // },
-            // {
-            //     id: 4,
-            //     category: "Basket",
-            //     name: "Basket 1",
-            //     price: "18",
-            //     image: "/images/basket/1.jpeg",
-
-            // },
-            // {
-            //     id: 5,
-            //     category: "Jute",
-            //     name: "Jute 2",
-            //     price: "23",
-            //     image: "/images/jute/2.jpg",
-
-            // },
-            // {
-            //     id: 6,
-            //     category: "Leather",
-            //     name: "Leather 2",
-            //     price: "25",
-            //     image: "/images/leather/2.jpeg",
-
-            // },
-            // {
-            //     id: 7,
-            //     category: "Accessories",
-            //     name: "Accessories 2",
-            //     price: "20",
-            //     image: "/images/accessories/2.JPG",
-
-            // },
-            // {
-            //     id: 8,
-            //     category: "Baskter",
-            //     name: "Basket 2",
-            //     price: "19",
-            //     image: "/images/basket/2.jpeg",
-
-            // },
-            // {
-            //     id: 9,
-            //     category: "Jute",
-            //     name: "Jute 3",
-            //     price: "20",
-            //     image: "/images/jute/3.jpeg",
-
-            // },
-            // // {
-            // //     id: 10,
-            // //     category: ["All Products", "Leather"],
-            // //     name: "Leather 3",
-            // //     price: "26",
-            // //     image: "/images/leather/3.jpeg",
-
-            // // },
-            // // {
-            // //     id: 11,
-            // //     category: ["All Products", "Accessories"],
-            // //     name: "Accessories 3",
-            // //     price: "21",
-            // //     image: "/images/accessories/3.JPG",
-
-            // // },
-            // // {
-            // //     id: 12,
-            // //     category: ["All Products", "Baskter"],
-            // //     name: "Basket 3",
-            // //     price: "20",
-            // //     image: "/images/basket/3.jpeg",
-
-            // // },
-            // // {
-            // //     id: 13,
-            // //     category: ["All Products", "Jute"],
-            // //     name: "Jute 4",
-            // //     price: "22",
-            // //     image: "/images/jute/4.jpeg",
-
-            // // },
-            // // {
-            // //     id: 14,
-            // //     category: ["All Products", "Leather"],
-            // //     name: "Leather 4",
-            // //     price: "35",
-            // //     image: "/images/leather/4.jpeg",
-
-            // // },
-            // // {
-            // //     id: 15,
-            // //     category: ["All Products", "Accessories"],
-            // //     name: "Accessories 4",
-            // //     price: "30",
-            // //     image: "/images/accessories/4.JPG",
-
-            // // },
-            // // {
-            // //     id: 16,
-            // //     category: ["All Products", "Basket"],
-            // //     name: "Basket 4",
-            // //     price: "29",
-            // //     image: "/images/basket/4.jpeg",
-
-            // // },
         ]
 }
