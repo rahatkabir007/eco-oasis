@@ -15,7 +15,7 @@ const Contactus: React.FC<Props> = (props) => {
 
             >
                 <div className='flex flex-col gap-y-8'>
-                    <div className='py-5 w-full md:w-[75%] ml-0 md:ml-[2rem] lg:ml-[11rem]'>
+                    <div className='py-5 w-full md:w-[75%] ml-0 md:ml-[2rem] lg:ml-[7rem] xl:ml-[9rem]'>
                         <p className='text-xl text-black dark:text-white'
                         >To contact us, please use the form below or send an email to <span className='font-semibold text-ecodarkgreen'>tabarak@eco-oasis.com.</span> We'll do our highest to respond as quickly as we can.</p>
                     </div>
