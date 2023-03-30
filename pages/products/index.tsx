@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Products from '../components/pages/Products/Products'
-import { controller } from '../src/state/StateController'
+import Products from '../../components/pages/Products/Products'
+import { controller } from '../../src/state/StateController'
 
 interface Props {
 }

@@ -1,0 +1,32 @@
+.header p {
+    --s: 0.1em;
+    /* the thickness of the line */
+    --c: #00AD7F;
+    /* the color */
+    color: #0000;
+    padding-bottom: var(--s);
+    background:
+        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.header p:hover {
+    --_p: 100%
+}
+
+
+@media only screen and (max-width:768px) {
+    .header p {
+        font-size: 2rem;
+        margin-left: 8px;
+    }
+
+
+}
+
+
+/* Tab */
+@media only screen and (min-width: 769px) and (max-width: 1135px) {}

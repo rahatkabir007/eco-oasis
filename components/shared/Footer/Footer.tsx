@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { Jsondata } from '../../../src/utils/Jsondata'
-
+import css from "../Header/Header.module.css"
 
 interface Props {
 }
@@ -12,10 +12,12 @@ const Footer: React.FC<Props> = (props) => {
 
     return (
         <div className="bg-ecolightblack mt-10">
-            <div className="flex flex-col md:flex-row py-24 container-x gap-y-9 gap-x-16" style={{ paddingLeft: '4rem', paddingRight: '4rem' }}>
-                <div className="flex flex-col gap-9">
+            <div className="conatiner-x px-4 md:px-10 lg:px-4 flex flex-col lg:flex-row justify-evenly items-start py-24 gap-y-9 gap-x-10">
+                <div className="flex flex-col justify-center items-start gap-9">
                     <div>
-                        <img src="/images/Frame.svg" alt="" />
+                        <img src="/images/Logo.png" alt=""
+                            className={css["logo"]}
+                        />
                     </div>
                     <div>
                         <p className="text-ecolightgrey">©2023 Eco Oasis Limited, All Right Reserved</p>
@@ -24,23 +26,15 @@ const Footer: React.FC<Props> = (props) => {
                         <a href="" className="text-ecolightgrey"><p>Terms & Conditions</p></a>
                     </div>
                 </div>
-                <div className="flex flex-col gap-8 flex-1 px-0 md:px-8">
+                <div className="flex flex-col gap-8 w-[100%] md:w-[65%] lg:w-[20%]">
                     <div>
                         <p className="text-white">Headquarter</p>
                     </div>
                     <div>
-                        <p className="text-ecolightgrey">Kabir Manzil, Flat # 14, House # 76A,
-                            1 Number Zakir Hossain Road, Khulshi.
-                            Chattogram 4225, Bangladesh</p>
-                    </div>
-                    <div>
-                        <p className="text-ecolightgrey">Registered Office : Chowdhury Villa,
-                            1567/D, Air Mohammad School Road,
-                            West Bakalia, Chattogram,
-                            PO : 4203, Bangladesh.</p>
+                        <p className="text-ecolightgrey"> Kabir Manzil, Flat # 14, House # 76A, 1 Number Zakir Hossain Road, Khulshi, PO : 4225, Chattogram, Bangladesh.</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-8 px-0 md:px-28">
+                <div className="flex flex-col gap-8">
                     <div>
                         <p className='text-white'>Website</p>
                     </div>
@@ -54,7 +48,7 @@ const Footer: React.FC<Props> = (props) => {
                         }
                     </div>
                 </div>
-                <div className="flex flex-col gap-8 px-0 md:px-8">
+                <div className="flex flex-col gap-8">
                     <div>
                         <p className="text-white">Social</p>
                     </div>

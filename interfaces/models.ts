@@ -7,8 +7,8 @@ export type User = {
 
 export type IProducts = {
   id: number,
-  category: Array<string>,
+  category: string,
   name: string,
-  price: string,
+  subcategory: string,
   image: string,
 }

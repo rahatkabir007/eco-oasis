@@ -22,8 +22,8 @@ const Blogs: React.FC<Props> = (props) => {
                             Jsondata.blogsData.map((item) => {
                                 return (
                                     <div className="flex flex-col gap-y-4">
-                                        <div>
-                                            <img src={item.image} alt="" className='w-full' />
+                                        <div className='overflow-hidden cursor-pointer'>
+                                            <img src={item.image} alt="" className='w-full scale-[1] hover:scale-[1.3] transition-all duration-300' />
                                         </div>
                                         <div className='flex gap-x-3'>
                                             <span className="text-[13px] text-[#00AD7F] font-medium">{item.category}</span>

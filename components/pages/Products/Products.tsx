@@ -1,65 +1,21 @@
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { IProducts } from '../../../interfaces/models'
 import { controller } from '../../../src/state/StateController'
 import { Jsondata } from '../../../src/utils/Jsondata'
-
+import SectionHeader from '../../helpers/SectionHeader/SectionHeader'
+import styles from "./Products.module.css"
 interface Props {
 }
 
 const Products: React.FC<Props> = (props) => {
 
     const states = useSelector(() => controller.states)
-    const [products, setProducts] = useState<Array<IProducts>>([])
-    const [filteredProducts, setFilteredProducts] = useState<Array<IProducts>>([])
-    const [selected, setSelected] = useState("All Products");
-    const [search, setSearch] = useState("");
-    const [select, setSelect] = useState("All Categories");
-
-
-    useEffect(() => {
-        fetch("/products.json")
-            .then(res => res.json())
-            .then(data => {
-                setProducts(data)
-                setFilteredProducts(data.filter((product: IProducts) => {
-                    return product.category.includes("All Products")
-                }))
-            })
-
-    }, [])
-
-    const handleProductsFilter = (item: string) => {
-        setSelected(item)
-        setTimeout(() => {
-            if (item === 'All Products') {
-                setFilteredProducts(products.filter((product) => product.category.includes("All Products")));
-            } else {
-                setFilteredProducts(products.filter((product) => product.category.includes(item)));
-            }
-        }, 500);
-    }
-
-    const handleChange = (e: any) => {
-        const value = e.target.value;
-        setSearch(value);
-        setSelect(value);
-    }
-    const handleSearch = (e: any) => {
-        e.preventDefault()
-        // setFilteredProducts(products.filter((product) => {
-        //     return product.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
-        // }))
-        setFilteredProducts(products.filter((product) => product.name.toLowerCase().includes(search.toLowerCase())))
-        if (select === "All Categories") {
-            setFilteredProducts(products.filter((product) => product.category.includes("All Products")))
-        }
-
-    }
-
 
     return (
         <div className="container-x">
+<<<<<<< HEAD
             <div className='flex flex-col px-2 md:px-20 mt-10'>
                 <form className="flex" onClick={handleSearch}>
                     <div>
@@ -93,35 +49,41 @@ const Products: React.FC<Props> = (props) => {
                             )
                         })
                     }
+=======
+            <div className='flex flex-col items-center text-center w-full p-4 md:p-0 md:w-[85%] mx-auto my-12 md:my-24'>
+                <div>
+                    <p className="text-xl text-ecodarkgreen font-semibold it">Products Range</p>
+>>>>>>> 975aba1dcc9486ab2c8ff0ffec41d199f47c19ed
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-16 py-6 px-6 md:py-16 md:px-32">
-                    {
-                        filteredProducts.length > 0 ? <>
-                            {
-                                filteredProducts.map((product, ind) => {
-                                    return (
-                                        <div className="flex justify-center items-center flex-col gap-y-3 bg-[#F7F7F7] py-10 rounded-lg">
-                                            <div>
-                                                <img src={product.image} alt="" className='w-[122px] h-[156px] object-cover' />
-                                            </div>
-                                            <div>
-                                                <p className="text-[#3B3B3B] font-bold text-lg">{product.name}</p>
-                                            </div>
-                                            <div>
-                                                <p className="text-[#3B3B3B] text-lg">${" "}{product.price}</p>
-                                            </div>
+                <div className='mt-[13px]'>
+                    <p className="text-[15px] text-ecoblack dark:text-white">Eco Oasis Limited chooses to source and deliver eco-friendly biodegradable products in considering the sustainability prospect in the coming future that aligns with our business ethics and core values. Eco Oasis Limited ensures 100% biodegradable materials like Jut, Cotton, Bamboo, Cane, Seagrass, Leather, etc. through proper quality checks of standard testing. Our product range covers Rugs, Floor mat, Table Runner, Ladies' bags, Shopping Bags, Baskets, etc. made of Jute and Cotton. We also source and export Genuine Leather products like Men belts, Ladies' Purses, Bags, Wallets, Footwear, Jackets, Hand Gloves, etc.</p>
+                </div>
+            </div>
+            <div className='my-1'>
+                <SectionHeader title="Product Categories" fontSize="4rem" />
+            </div>
+            <div className='p-12 grid grid-cols-1 md:grid-cols-2 gap-y-20'>
+                {
+                    Jsondata.productCategories.map((item) => {
+                        return (
+                            <Link href={`/products/category/${item.url}`}>
+                                <div className={`${styles["container"]} w-full h-[300px] sm:h-[400px] md:w-[600px] md:h-[400px]`}
+                                    style={{
+                                        backgroundImage: ` url(${item.image})`
+                                    }}
+                                >
+                                    <div className={`${styles["overlay"]}`}>
+                                        <div className={`${styles["items"]} ${styles["head"]}`}>
+                                            <p>{item.category}</p>
+                                            <hr />
                                         </div>
-                                    )
-                                })
-                            }
-                        </> :
-                            <>
-                                <div className="flex justify-center items-center py-10">
-                                    <p className="text-ecolightgreen font-bold text-lg">No Products Match or Available</p>
+
+                                    </div>
                                 </div>
-                            </>
-                    }
-                </div>
+                            </Link>
+                        )
+                    })
+                }
             </div>
         </div>
     )

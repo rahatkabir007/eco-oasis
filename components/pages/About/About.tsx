@@ -21,11 +21,11 @@ const About: React.FC<Props> = (props) => {
                         <p className="text-[15px] text-ecoblack dark:text-white">Shareholder’s knowledge, skills, customized mindset, innovative thinking widened in the field of Merchandising, Operations, Human Capital management, enterprise project management, and logistics service have broadened the scope to meet customized demand and deal the business in befitting manner.  Eco Oasis wants to be a true partner instead of a profit aiming entity and wants to build a long-term business association towards its vision.</p>
                     </div>
                 </div>
-                <div className='flex flex-wrap justify-center items-start gap-8'>
+                <div className='flex flex-col sm:flex-row md:flex-row justify-center items-center md:items-start gap-8'>
                     {
                         Jsondata.aboutData.map(item => {
                             return (
-                                <div className={`rounded-lg w-[292px] bg-ecobglightgreen text-center`} style={{
+                                <div className={`rounded-lg w-[292px] bg-ecobglightgreen text-center overflow-hidden sm:overflow-scroll lg:overflow-hidden`} style={{
                                     height: item.height
                                 }}>
                                     <div
