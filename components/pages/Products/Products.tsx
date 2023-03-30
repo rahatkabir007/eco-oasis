@@ -26,12 +26,12 @@ const Products: React.FC<Props> = (props) => {
             <div className='my-1'>
                 <SectionHeader title="Product Categories" fontSize="4rem" />
             </div>
-            <div className='p-12 grid grid-cols-1 md:grid-cols-2 gap-y-20'>
+            <div className='p-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-x-10 md:gap-x-0 gap-y-20'>
                 {
                     Jsondata.productCategories.map((item) => {
                         return (
                             <Link href={`/products/category/${item.url}`}>
-                                <div className={`${styles["container"]} w-full h-[300px] sm:h-[400px] md:w-[600px] md:h-[400px]`}
+                                <div className={`${styles["container"]} w-full h-[300px] sm:h-[300px] md:w-[600px] md:h-[400px]`}
                                     style={{
                                         backgroundImage: ` url(${item.image})`
                                     }}

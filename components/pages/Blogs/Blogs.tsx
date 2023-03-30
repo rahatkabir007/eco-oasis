@@ -17,7 +17,7 @@ const Blogs: React.FC<Props> = (props) => {
                     <div className='mb-8'>
                         <p className="text-black dark:text-white text-2xl">Latest</p>
                     </div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 md:gap-y-0'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 md:gap-y-0'>
                         {
                             Jsondata.blogsData.map((item) => {
                                 return (
