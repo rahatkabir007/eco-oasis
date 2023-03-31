@@ -6,6 +6,7 @@ import { store } from "../src/state/StateController";
 import { ThemeProvider } from "next-themes";
 import Header from "../components/shared/Header/Header";
 import Footer from "../components/shared/Footer/Footer";
+import ScrollToTop from "../components/helpers/ScrollToTop/ScrollToTop";
 
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;
@@ -26,6 +27,7 @@ export default function MyApp(props: AppProps) {
         <React.Fragment>
           <Component {...pageProps} />
         </React.Fragment>
+        <ScrollToTop />
         <Footer />
       </Provider>
     </ThemeProvider>
