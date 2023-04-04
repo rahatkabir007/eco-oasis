@@ -101,7 +101,7 @@ export class Jsondata {
         {
             id: 1,
             category: "Jute",
-            subcategory: "Shopping Bag/tote",
+            subcategory: "Shopping Bag",
             name: "Shopping Bag type 1",
             image: "https://i.ibb.co/hBz16J6/1-removebg-preview.jpg",
         },
