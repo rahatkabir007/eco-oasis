@@ -7,6 +7,7 @@ import { ThemeProvider } from "next-themes";
 import Header from "../components/shared/Header/Header";
 import Footer from "../components/shared/Footer/Footer";
 import ScrollToTop from "../components/helpers/ScrollToTop/ScrollToTop";
+import Head from "next/head";
 
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;
@@ -25,6 +26,9 @@ export default function MyApp(props: AppProps) {
       <Provider store={store}>
         <Header />
         <React.Fragment>
+          <Head>
+            <title>Eco Oasis</title>
+          </Head>
           <Component {...pageProps} />
         </React.Fragment>
         <ScrollToTop />

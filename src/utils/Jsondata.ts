@@ -3,7 +3,11 @@ export class Jsondata {
     static headerLinks = [
         { name: "Home", link: "/" },
         { name: "About", link: "/about" },
-        { name: "Product", link: "/products" },
+        {
+            name: "Product", link: "/products", category: [
+                "jute", "leather", "basket", "accessories"
+            ]
+        },
         { name: "Blogs", link: "/blogs" },
         { name: "Contact", link: "/contact" },
     ];

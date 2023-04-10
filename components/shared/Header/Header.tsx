@@ -60,7 +60,7 @@ const Header: React.FC<Props> = (props) => {
                                 Jsondata.headerLinks.map((link) => (
                                     <li onClick={() => controller.setState({ open: !states.open })} key={link.name} className='lg:mr-8 text-xl lg:my-0 my-7'>
                                         <Link href={link.link} className=
-                                            {`${asPath === link?.link ? "text-ecolightgreen" : nav ? "text-black lg:text-white" : "text-[#000000]"} dark:sm:text-white dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 text-base capitalize font-medium`}
+                                            {`${asPath === link?.link || asPath === `${link?.link}/category/jute` ? "text-ecolightgreen" : nav ? "text-black lg:text-white" : "text-[#000000]"} dark:sm:text-white dark:text-white hover:text-ecolightgreen dark:hover:text-ecolightgreen  duration-500 text-base capitalize font-medium`}
                                         >{link.name}</Link>
                                     </li>
                                 ))
