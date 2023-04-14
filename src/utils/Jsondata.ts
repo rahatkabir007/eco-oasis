@@ -21,13 +21,13 @@ export class Jsondata {
         },
         {
             title: "Vision",
-            description: `In the era of the Fourth and Fifth Industrial Revolution, the growing importance of biodegradable and non-disposable products due to climate Change and globalization has extensively driven customer’s mindset and made psychological U turn to heathy environment aiming for a healthier life. Eco Oasis Limited always dreamed to "sail beyond the sunset" to bridge between Customer’s choice, life style and healthy mindset. On this note, Eco Oasis Limited is endeavoring to source and produce eco-friendly products like Jute products, diversified jute products, handicrafts, Bamboo handicraft, agro-based organic products and post supply services to meet customized satisfaction. Started journey in 2021 with a mission to ensure Healthier Quality and on-time delivery is the commitment while the competitive price is the key strength of the Company Policy.`,
+            description: `In the era of the Fourth and Fifth Industrial Revolutions, the growing importance of biodegradable and non-disposable products due to climate change and globalization has extensively driven customers’ mindsets and made psychological U-turn to a healthy environment aiming for a healthier life. Eco Oasis Limited always dreamed of "sail beyond the sunset" to bridge customers’ choices, lifestyles, and healthy mindsets. On this note, Eco Oasis Limited is endeavoring to source and produce eco-friendly products like jute products, diversified jute products, handicrafts, bamboo handicrafts, agro-based organic products, and post-supply services to meet customized satisfaction. The company started its journey in 2021 with a mission to ensure healthier quality and on-time delivery the commitment while the competitive price is the key strength of the company policy.`,
             height: '385px',
             padding: "3rem 2.2rem"
         },
         {
             title: "Message",
-            description: "Shareholder’s knowledge, skills, customized mindset, innovative thinking widened in the field of Merchandising, Operations, Human Capital management, enterprise project management, and logistics service have broadened the scope to meet customized demand and deal the business in befitting manner.  Eco Oasis wants to be a true partner instead of a profit aiming entity and wants to build a long-term business association towards its vision.",
+            description: `Quality and on-time delivery is the prior commitment while the competitive price is the key strength of the business win of the company. Eco Oasis Limited always dreamed of "Sail beyond the sunset" which is the key to achieving our business vision.`,
             height: '300px',
             padding: "3rem 3rem"
         },
