@@ -24,7 +24,7 @@ const Blogs: React.FC<Props> = (props) => {
                                     <div className="flex flex-col gap-y-4 shadow-sm rounded"
                                     >
                                         <div className='overflow-hidden cursor-pointer rounded'>
-                                            <img src={item.image} alt="" className='w-full h-[280px] object-cover scale-[1] hover:scale-[1.3] transition-all duration-300' />
+                                            <img src={item.image} alt="" className='bg-gray-400 w-full h-[280px] object-cover scale-[1] hover:scale-[1.3] transition-all duration-300' />
                                         </div>
                                         <div className='px-4 py-2'>
                                             <div className='flex gap-x-3'>
@@ -55,7 +55,7 @@ const Blogs: React.FC<Props> = (props) => {
                                 return (
                                     <div className='flex gap-x-4'>
                                         <div>
-                                            <img src={item.image} alt="" className='w-[140px] h-[100px]' />
+                                            <img src={item.image} alt="" className='w-[140px] h-[100px] bg-gray-400 object-cover' loading='lazy' />
                                         </div>
                                         <div className='flex flex-col gap-y-1 flex-1 justify-between'>
                                             <div>

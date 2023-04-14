@@ -17,7 +17,7 @@ export class Jsondata {
             title: "Mission",
             description: "To grab opportunities through market exploration and analysis aiming for viable connectivity & network. To create trust & commitment amongst stakeholders and customers through quality & efficiency. To explore newness & unique ideas through modern research and development for product diversification and business expansion.",
             height: '300px',
-            padding: "3rem 4rem"
+            padding: "3rem 3.5rem"
         },
         {
             title: "Vision",
