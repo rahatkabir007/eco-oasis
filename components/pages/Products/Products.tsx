@@ -20,7 +20,7 @@ const Products: React.FC<Props> = (props) => {
                     <p className="text-xl text-ecodarkgreen font-semibold it">Products Range</p>
                 </div>
                 <div className='mt-[13px]'>
-                    <p className="text-[15px] text-ecoblack dark:text-white">Eco Oasis Limited chooses to source and deliver eco-friendly biodegradable products in considering the sustainability prospect in the coming future that aligns with our business ethics and core values. Eco Oasis Limited ensures 100% biodegradable materials like Jut, Cotton, Bamboo, Cane, Seagrass, Leather, etc. through proper quality checks of standard testing. Our product range covers Rugs, Floor mat, Table Runner, Ladies' bags, Shopping Bags, Baskets, etc. made of Jute and Cotton. We also source and export Genuine Leather products like Men belts, Ladies' Purses, Bags, Wallets, Footwear, Jackets, Hand Gloves, etc.</p>
+                    <p className="text-[15px] text-ecoblack dark:text-white">Eco Oasis Limited chooses to source and deliver eco-friendly biodegradable products in considering the sustainability prospect in the coming future that aligns with our business ethics and core values. Eco Oasis Limited ensures 100% biodegradable materials like Jute, Cotton, Bamboo, Cane, Seagrass, Leather, etc. through proper quality checks of standard testing. Our product range covers Rugs, Floor mat, Table Runner, Ladies' bags, Shopping Bags, Baskets, etc. made of Jute and Cotton. We also source and export Genuine Leather products like Men belts, Ladies' Purses, Bags, Wallets, Footwear, Jackets, Hand Gloves, etc.</p>
                 </div>
             </div>
             <div className='my-1'>

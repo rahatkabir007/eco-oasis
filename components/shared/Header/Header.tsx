@@ -117,8 +117,8 @@ const Header: React.FC<Props> = (props) => {
                                 onClick={() => setTheme('light')}
                             >
                                 <SvgIconRenderer
-                                    width="20px"
-                                    height="20px"
+                                    width="24px"
+                                    height="24px"
                                     viewBox="0 0 20 20"
                                     path={SvgPaths?.sun}
                                     pathFill={"#9333ea"}

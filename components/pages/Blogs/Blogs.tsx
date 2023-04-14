@@ -17,22 +17,25 @@ const Blogs: React.FC<Props> = (props) => {
                     <div className='mb-8'>
                         <p className="text-black dark:text-white text-2xl">Latest</p>
                     </div>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 md:gap-y-0'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 md:gap-y-10'>
                         {
                             Jsondata.blogsData.map((item) => {
                                 return (
-                                    <div className="flex flex-col gap-y-4">
-                                        <div className='overflow-hidden cursor-pointer'>
-                                            <img src={item.image} alt="" className='w-full scale-[1] hover:scale-[1.3] transition-all duration-300' />
+                                    <div className="flex flex-col gap-y-4 shadow-sm rounded"
+                                    >
+                                        <div className='overflow-hidden cursor-pointer rounded'>
+                                            <img src={item.image} alt="" className='w-full h-[280px] object-cover scale-[1] hover:scale-[1.3] transition-all duration-300' />
                                         </div>
-                                        <div className='flex gap-x-3'>
-                                            <span className="text-[13px] text-[#00AD7F] font-medium">{item.category}</span>
-                                            <span className="text-[13px] text-[#8F8F8F]">{item.redingDuration}</span>
-                                        </div>
-                                        <div>
-                                            <p className='text-xl text-[#121212] dark:text-white break-words'>{item.title}</p>
+                                        <div className='px-4 py-2'>
+                                            <div className='flex gap-x-3'>
+                                                <span className="text-[13px] text-[#00AD7F] font-medium">{item.category}</span>
+                                                <span className="text-[13px] text-[#8F8F8F]">{item.redingDuration}</span>
+                                            </div>
                                             <div>
-                                                <a href="" className="text-[13px] text-[#8F8F8F]">Read the full blog..</a>
+                                                <p title={item.title} className='cursor-pointer text-xl text-[#121212] dark:text-white whitespace-nowrap overflow-hidden text-ellipsis'>{item.title}</p>
+                                                <div className='mt-3'>
+                                                    <a href={item.link} target='_blank' className="text-[13px] text-[#8F8F8F] hover:text-ecodarkgreen">Read the full blog..</a>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -52,14 +55,15 @@ const Blogs: React.FC<Props> = (props) => {
                                 return (
                                     <div className='flex gap-x-4'>
                                         <div>
-                                            <img src={item.image} alt="" className='w-full h-full' />
+                                            <img src={item.image} alt="" className='w-[140px] h-[100px]' />
                                         </div>
-                                        <div className='flex flex-col gap-y-1 flex-1'>
+                                        <div className='flex flex-col gap-y-1 flex-1 justify-between'>
                                             <div>
                                                 <p className="text-[#020202] dark:text-white text-[17.3481px] font-medium">{item.title}</p>
                                             </div>
                                             <div>
-                                                <p className="text-[#8F8F8F] text-[12px] break-words">{item.description}</p>
+                                                {/* <p className="text-[#8F8F8F] text-[12px] break-words">{item.description}</p> */}
+                                                <a href={item.link} target='_blank' className="text-[13px] text-[#8F8F8F] hover:text-ecodarkgreen">Read the full blog..</a>
                                             </div>
                                         </div>
                                     </div>

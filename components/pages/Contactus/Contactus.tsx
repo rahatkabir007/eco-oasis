@@ -56,7 +56,7 @@ const Contactus: React.FC<Props> = (props) => {
                         <div className='flex flex-col gap-y-10'>
                             <div className='flex flex-col gap-y-8'>
                                 <div>
-                                    <p className='text-xl font-bold text-ecodarkgreen dark:text-white'>Registerd Office</p>
+                                    <p className='text-xl font-bold text-ecodarkgreen dark:text-white'>Registered Office</p>
                                 </div>
                                 <div className={`${css["rightForm"]} flex flex-col gap-y-6`}>
                                     <p className='text-xl text-[#3B3B3B] dark:text-white'>Chowdhury Villa, 1567/D,<br /> Air
@@ -67,7 +67,7 @@ const Contactus: React.FC<Props> = (props) => {
                             </div>
                             <div className={`${css["rightForm"]} flex flex-col gap-y-6`}>
                                 <div>
-                                    <p className='text-xl font-bold text-ecodarkgreen dark:text-white'>Headquarter</p>
+                                    <p className='text-xl font-bold text-ecodarkgreen dark:text-white'>Mailing Address</p>
                                 </div>
                                 <div className={`${css["rightForm"]} flex flex-col gap-y-6`}>
                                     <p className='text-xl text-[#3B3B3B] dark:text-white '>
