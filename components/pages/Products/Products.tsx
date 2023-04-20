@@ -38,7 +38,7 @@ const Products: React.FC<Props> = (props) => {
                                 >
                                     <div className={`${styles["overlay"]}`}>
                                         <div className={`${styles["items"]} ${styles["head"]}`}>
-                                            <p>{item.category}</p>
+                                            <p>{item.title}</p>
                                             <hr />
                                         </div>
 

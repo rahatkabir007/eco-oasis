@@ -124,27 +124,38 @@ export class Jsondata {
     static productCategories = [
         {
             id: 1,
+            title: "Jute",
             category: "Jute",
             image: "/images/jutecat.jpeg",
             url: "jute"
         },
         {
             id: 2,
+            title: "Leather",
             category: "Leather",
             image: "/images/leather.png",
             url: "leather"
         },
         {
             id: 3,
+            title: "Basket",
             category: "Basket",
             image: "/images/basket.jpeg",
             url: "basket"
         },
         {
             id: 4,
+            title: "Accessories & Others",
             category: "Accessories",
             image: "https://img3.exportersindia.com/product_images/bc-full/2020/9/7152048/mens-travel-wallet-1599121067-5573013.jpeg",
             url: "accessories"
+        },
+        {
+            id: 5,
+            title: "Coco Peat and Coir",
+            category: "Coco",
+            image: "https://i.ibb.co/5W1Xnzy/Category-Picture.jpg",
+            url: "coco"
         },
     ]
 
@@ -638,6 +649,48 @@ export class Jsondata {
             subcategory: "Accessories & others",
             name: "Card holder type 3",
             image: "https://i.ibb.co/9HDNc3b/6-removebg-preview.jpg",
+        },
+        {
+            id: 71,
+            category: "Coco",
+            subcategory: "Coco Peat and Coir",
+            name: "Cocco-Peat",
+            image: "https://i.ibb.co/dtRdPY2/1-Cocco-Peat.jpg",
+        },
+        {
+            id: 72,
+            category: "Coco",
+            subcategory: "Coco Peat and Coir",
+            name: "Coco Fibre",
+            image: "https://i.ibb.co/Y8ww90k/2-Coco-Fibre.jpg",
+        },
+        {
+            id: 73,
+            category: "Coco",
+            subcategory: "Coco Peat and Coir",
+            name: "Coco Husk",
+            image: "https://i.ibb.co/7ywPqTm/3-Coco-Husk.png",
+        },
+        {
+            id: 74,
+            category: "Coco",
+            subcategory: "Coco Peat and Coir",
+            name: "Coco Pols",
+            image: "https://i.ibb.co/JxNqbWQ/4-Coco-Pols.png",
+        },
+        {
+            id: 75,
+            category: "Coco",
+            subcategory: "Coco Peat and Coir",
+            name: "Coir Pot",
+            image: "https://i.ibb.co/qMW9B06/5-Coir-Pot.png",
+        },
+        {
+            id: 76,
+            category: "Coco",
+            subcategory: "Coco Peat and Coir",
+            name: "Coir Weed Mat",
+            image: "https://i.ibb.co/k4xLF0S/6-Coir-Weed-Mat.jpg",
         },
     ]
 }
