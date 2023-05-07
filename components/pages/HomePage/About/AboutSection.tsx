@@ -8,12 +8,16 @@ const AboutSection: React.FC<Props> = (props) => {
 
 
     return (
-        <div className='flex flex-col items-center text-center w-full p-4 md:p-0 sm:w-[80%] lg:w-[60%] mx-auto my-12 md:my-24'>
+        <div className='flex flex-col items-start text-start container-x my-12 md:my-24'>
             <div>
-                <p className="text-[30px] text-[#165A3E] ">Overview</p>
+                <p className="text-[30px] text-[#165A3E] ">Eco Oasis Limited: Who We Are</p>
             </div>
-            <div className='mt-[13px]'>
-                <p className="text-[15px] text-[#165A3E] dark:text-white">In the era of the Fourth and Fifth Industrial Revolutions, the growing importance of biodegradable and non-disposable products due to climate change and globalization has extensively driven customers’ mindsets and made psychological U-turn to a healthy environment aiming for a healthier life. Eco Oasis Limited always dreamed of <span className='font-bold'>"sail beyond the sunset"</span> to bridge customers’ choices, lifestyles, and healthy mindsets. On this note, Eco Oasis Limited is endeavoring to source and produce eco-friendly products like jute products, diversified jute products, handicrafts, bamboo handicrafts, agro-based organic products, and post-supply services to meet customized satisfaction. The company started its journey in 2021 with a mission to ensure healthier quality and on-time delivery the commitment while the competitive price is the key strength of the company policy.</p>
+            <div className='mt-[13px] leading-[30px]'>
+                <p className="text-[15px] text-[#165A3E] dark:text-white ">In the era of the Fifth Industrial Revolution, the growing importance of Eco-Friendly and Biodegradable products worldwide is increasing daily. In this age of globalization, climate change and various diseases affect people's Lifestyles. In this new normal-life living ways of people are being paid more attention to the use of environment-friendly products and natural agricultural foods. People are becoming more health-conscious and disciplined in livelihoods in all walks of life.
+                </p>
+                <p className="text-[15px] text-[#165A3E] dark:text-white">
+                    Eco Oasis Limited has always dreamed of bridging customers’ Satisfaction with Happiness to decorate their Lifestyles with sustainable eco-friendly materials. We are endeavoring to source and Export Eco-friendly Lifestyle products like Jute & Cotton diversified products, various handicrafts made of Biodegradable and natural material, and Agro-based organic products with ensuring post-supply services to meet customer satisfaction. Eco Oasis Limited started its journey in March 2021 with the theme <span className='font-bold'>“To Sail Beyond the Sunset”</span> to sail on the Sea of this Globalization to ensure a safe and healthy journey for the next Generation.
+                </p>
             </div>
         </div>
     )

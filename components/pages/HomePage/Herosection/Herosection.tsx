@@ -26,7 +26,7 @@ const Herosection: React.FC<Props> = (props) => {
                             <p className="text-herogreen font-bold text-[24px] sm:text-[49px] md:text-[49px]">Eco Oasis Limited</p>
                         </div>
                         <div className="">
-                            <p className="text-gray-200">A Trusted Partner in Sourcing, Supply Chain and Export Management</p>
+                            <p className="text-gray-200">A Trusted Partner in Sourcing, Supply Chain and Export management for Eco-Friendly and Natural Product</p>
                         </div>
                     </div>
                 </div>
