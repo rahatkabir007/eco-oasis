@@ -14,6 +14,12 @@ body {
   margin: 0 auto;
 }
 
+.container-x2 {
+  max-width: 1216px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
 
 
 /* Scroll To Top Css */
@@ -67,7 +73,9 @@ body {
 
 /* Scroll To Top Css */
 @media (min-width: 768px) {
-  .container-x {
+
+  .container-x,
+  .container-x2 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }

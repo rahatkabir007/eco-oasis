@@ -46,7 +46,7 @@ const Header: React.FC<Props> = (props) => {
 
     return (
         <div className={`w-full sticky top-0 left-0 transition ease duration-300 z-10 ${nav ? 'bg-ecobglightblack shadow-lg dark:bg-ecolightblack' : ''}`}>
-            <div className={`flex items-center justify-between py-7 px-7 lg:px-12 container-x`}>
+            <div className={`flex items-center justify-between py-7 px-7  container-x`}>
                 <div
                     className={`${css["logodiv"]} cursor-pointer inline md:flex items-center font-[Poppins] gap-x-24`}>
                     <Link href="/">

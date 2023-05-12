@@ -11,5 +11,5 @@ export type IProducts = {
   name: string,
   subcategory: string,
   image: string,
-  info: string
+  info?: string
 }

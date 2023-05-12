@@ -31,7 +31,7 @@ const Footer: React.FC<Props> = (props) => {
                         <p className="text-white">Mailing Address</p>
                     </div>
                     <div>
-                        <p className="text-ecolightgrey"> Kabir Manzil, Flat # 14, House # 76A, 1 Number Zakir Hossain Road, Khulshi, PO : 4225, Chattogram, Bangladesh.</p>
+                        <p className="text-ecolightgrey"> Kabir Manzil, Flat # 14, House # 76A, <br />1 Number Zakir Hossain Road, Khulshi,<br /> Chattogram, Bangladesh.</p>
                     </div>
                 </div>
                 <div className="flex flex-col gap-8">

@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { IProducts } from '../../../../../interfaces/models'
 import { controller } from '../../../../../src/state/StateController'
-import styles from "./Card.module.css"
+
 interface Props {
     item: IProducts
 }

@@ -5,7 +5,7 @@ export class Jsondata {
         { name: "About", link: "/about" },
         {
             name: "Product", link: "/products", category: [
-                "jute", "leather", "basket", "accessories"
+                "jute", "coco", "baskets", "leather", "accessories",
             ]
         },
         { name: "Blogs", link: "/blogs" },
@@ -143,9 +143,9 @@ export class Jsondata {
         {
             id: 3,
             title: "Eco-Friendly Basket",
-            category: "Basket",
+            category: "Baskets",
             image: "/images/basket.jpeg",
-            url: "basket"
+            url: "baskets"
         },
         {
             id: 4,
@@ -377,42 +377,42 @@ export class Jsondata {
 
         {
             id: 27,
-            category: "Coco Peat and Coir",
+            category: "Coco",
             subcategory: "Coco Peat and Coir",
             name: "Cocopeat",
             image: "https://i.ibb.co/dtRdPY2/1-Cocco-Peat.jpg",
         },
         {
             id: 28,
-            category: "Coco Peat and Coir",
+            category: "Coco",
             subcategory: "Coco Peat and Coir",
             name: "Coco Fibre",
             image: "https://i.ibb.co/Y8ww90k/2-Coco-Fibre.jpg",
         },
         {
             id: 29,
-            category: "Coco Peat and Coir",
+            category: "Coco",
             subcategory: "Coco Peat and Coir",
             name: "Coco Husk",
             image: "https://i.ibb.co/7ywPqTm/3-Coco-Husk.png",
         },
         {
             id: 30,
-            category: "Coco Peat and Coir",
+            category: "Coco",
             subcategory: "Coco Peat and Coir",
             name: "Coco Poles",
             image: "https://i.ibb.co/JxNqbWQ/4-Coco-Pols.png",
         },
         {
             id: 31,
-            category: "Coco Peat and Coir",
+            category: "Coco",
             subcategory: "Coco Peat and Coir",
             name: "Coir Pot",
             image: "https://i.ibb.co/qMW9B06/5-Coir-Pot.png",
         },
         {
             id: 32,
-            category: "Coco Peat and Coir",
+            category: "Coco",
             subcategory: "Coco Peat and Coir",
             name: "Coir Weed Mat",
             image: "https://i.ibb.co/k4xLF0S/6-Coir-Weed-Mat.jpg",
