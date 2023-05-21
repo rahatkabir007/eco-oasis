@@ -8,6 +8,18 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.goog-te-gadget img {
+  display: none !important;
+}
+
+body>.skiptranslate {
+  display: none;
+}
+
+body {
+  top: 0px !important;
+}
+
 .container-x {
   max-width: 1600px !important;
   width: 100%;

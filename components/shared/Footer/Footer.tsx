@@ -1,13 +1,39 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Jsondata } from '../../../src/utils/Jsondata'
 import css from "../Header/Header.module.css"
 
 interface Props {
 }
 
+declare global {
+    interface Window {
+        google: any;
+        googleTranslateElementInit: any
+    }
+}
+
+
 const Footer: React.FC<Props> = (props) => {
 
+    const googleTranslateElementInit = () => {
+        new window.google.translate.TranslateElement(
+            {
+                pageLanguage: "en",
+                autoDisplay: false
+            },
+            "google_translate_element"
+        );
+    };
+    useEffect(() => {
+        var addScript = document.createElement("script");
+        addScript.setAttribute(
+            "src",
+            "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        );
+        document.body.appendChild(addScript);
+        window.googleTranslateElementInit = googleTranslateElementInit;
+    }, []);
 
 
     return (
@@ -54,6 +80,7 @@ const Footer: React.FC<Props> = (props) => {
                     </div>
                     <div className='flex flex-col gap-1'>
                         <a href="https://www.facebook.com/EcoOasisLimited?hc_ref=ARTEt3kAc8Mb07RjYyTAlSRVgWHvCa58xGalswHP8HQVsd8nqHYjnKNPO2OdpvfXzPc&fref=nf&__xts__[0]=68.ARCWwns_8ixl8PsimtuyXOy2Yosgm7hHOeZzU1Kfa6Bc9dsa2nIUVfrYqBzCbnrJ7fU_w9e7KFCu_nxnEZX4JzhredTHbkUl2tX1m57458T3MENmwHJUo-e5y9nf-hOsOq15n0eRMPoRr1jllw6i6TRQ2hFUg1m_Q5pz2GD5cSjmaO2J0BYGM60z6lqFlvDJk5t2w5wve8YyeXvQIdq6WQVGaIkOgQfODY4-hEzCACVqNSOBLVjlQTQxEetvl4Zo1zv24WQ7KYIve7AdTIyeV9s4Z3vuvlhE6ru5KQqOYY-sLu2YuS8" className="text-ecolightgrey hover:text-ecolightgreen">Facebook</a>
+                        <div id="google_translate_element"></div>
                         {/* <a href="" className="text-ecolightgrey hover:text-ecolightgreen">LinkedIn</a>
                         <a href="" className="text-ecolightgrey hover:text-ecolightgreen ">Instagram</a> */}
                     </div>
