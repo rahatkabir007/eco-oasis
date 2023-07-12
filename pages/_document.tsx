@@ -24,6 +24,28 @@ export default class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          <style>
+            {
+              `
+	::-webkit-scrollbar {
+	  width: 8px;
+	  height: 5px !important;
+	}
+	::-webkit-scrollbar-track {
+	  box-shadow: inset 0 0 2px grey; 
+	  border-radius: 18px;
+	}
+	::-webkit-scrollbar-thumb {
+	  background: #165A3E; 
+	  border-radius: 10px;
+	  height:5px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+	  background: #b30000; 
+	}
+	`
+            }
+          </style>
         </Head>
         <body>
           <Main />
